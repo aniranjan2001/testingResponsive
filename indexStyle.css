@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+}
+
+body{
+    margin: 0px;
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: rgba(127, 255, 212, 0.678);
+}
+
+.container{
+    padding: 40px 80px;
+    background-color: rgb(48, 235, 172);
+
+}
+
+.container h1{
+    margin-bottom: 10px;
+    text-align: center;
+    color: #333;
+    font-size: 40px;
+    font-weight: 1000;
+}
+
+.container img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.container h2{
+    position: relative;
+    margin-top: 10px;
+    padding: 7.5px 10px;
+    padding-right: 20px;
+    width: fit-content;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.90);
+    border-radius: 12px 12px 0px 0px;
+    color: #333;
+    font-size: 28px;
+    font-weight: 750;
+    box-sizing: border-box;
+}
+
+.container h2::before{
+    margin: 5px 10px;
+    padding: 0px 7.5px;
+    width: 50px;
+    height: 50px;
+    content: "#";
+    background: linear-gradient(rgb(255, 0, 127),rgb(127, 0, 255)) ;
+    border-radius: 50%;
+    color: white;
+}
+
+.container h2:hover{
+    text-decoration: 3px underline;
+}
+
+.container p{
+    margin: 0;
+    padding: 15px;
+    line-height: 24px;
+    background: rgb(243, 238, 238);
+    border-radius: 0px 12px 12px 12px;
+    font-size: 18px;
+    font-weight: 537.5;
+    word-spacing: 5px;
+}
+
+
+
+
+
+
+
+/* for mobile */
+
+@media (width: 0px) and (max-width: 768px){
+    .container h2{
+        margin-top: 10px;
+        background: rgb(35, 214, 35);
+    }
+}
+
+
+/* for tablets */
+@media   (min-width: 769px) and (max-width: 1023px){
+    .container h2{
+        margin-top: 10px;
+        background: red;
+    }
+}
+
+
+
+/* for pc and desktops */
+
+@media (min-width: 1024px){
+    .container img{
+        margin: 50px;
+        float: right;
+        width: 50%;
+        
+    }
+       
+    .container p{
+        width: 40%;
+    }
+    
+}
