@@ -78,23 +78,7 @@ body{
 
 
 
-/* for mobile */
 
-@media (width: 0px) and (max-width: 768px){
-    .container h2{
-        margin-top: 10px;
-        background: rgb(35, 214, 35);
-    }
-}
-
-
-/* for tablets */
-@media   (min-width: 769px) and (max-width: 1023px){
-    .container h2{
-        margin-top: 10px;
-        background: red;
-    }
-}
 
 
 
@@ -112,4 +96,22 @@ body{
         width: 40%;
     }
     
+}
+
+
+/* for tablets */
+@media   (max-width: 768px){
+    .container h2{
+        margin-top: 10px;
+        background: red;
+    }
+}
+
+/* for mobile */
+
+@media (max-width: 480px){
+    .container h2{
+        margin-top: 10px;
+        background: rgb(35, 214, 35);
+    }
 }
